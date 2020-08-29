@@ -1,0 +1,3 @@
+apply plugin: "application"
+
+ext.moduleName = 'otus.fabricated.sorting.application'

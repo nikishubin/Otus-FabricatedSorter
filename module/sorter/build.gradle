@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'otus.fabricated.sorting.sorter'
+
+dependencies {
+
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${jupiterVersion}"
+}
