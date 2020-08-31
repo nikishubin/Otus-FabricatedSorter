@@ -1,7 +1,7 @@
-package ru.otus.patterns.sorter.impl;
+package ru.otus.patterns.factory.sorter.impl;
 
-import ru.otus.patterns.sorter.Sorter;
-import ru.otus.patterns.sorter.SorterFunctions;
+import ru.otus.patterns.factory.sorter.Sorter;
+import ru.otus.patterns.factory.sorter.functions.SorterFunctions;
 
 public class InsertingSort implements Sorter {
 

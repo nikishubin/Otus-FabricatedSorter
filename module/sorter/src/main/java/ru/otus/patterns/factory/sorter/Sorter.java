@@ -1,4 +1,4 @@
-package ru.otus.patterns.sorter;
+package ru.otus.patterns.factory.sorter;
 
 public interface Sorter {
 

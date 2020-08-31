@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.otus.patterns.factory.sorter.usecase.SorterInput</OriginalElement>
+  <nodes>
+    <node x="24.75" y="0.0">ru.otus.patterns.factory.external.reader.FileReader</node>
+    <node x="1000.5367216117218" y="0.0">ru.otus.patterns.factory.sorter.Sorter</node>
+    <node x="576.75" y="156.0">ru.otus.patterns.adapter.SorterOutputToFile</node>
+    <node x="1146.25" y="145.0">ru.otus.patterns.factory.sorter.impl.MergeSort</node>
+    <node x="273.25" y="282.0">ru.otus.patterns.factory.concrete.FileFlowFactory</node>
+    <node x="973.25" y="156.0">ru.otus.patterns.factory.sorter.impl.SelectionSort</node>
+    <node x="788.75" y="156.0">ru.otus.patterns.factory.sorter.impl.InsertingSort</node>
+    <node x="209.5" y="0.0">ru.otus.patterns.factory.sorter.usecase.SorterInput</node>
+    <node x="0.0" y="134.0">ru.otus.patterns.adapter.FileToSorterInput</node>
+    <node x="939.25" y="458.0">ru.otus.patterns.factory.concrete.SelectionFactory</node>
+    <node x="1230.2979853479853" y="458.0">ru.otus.patterns.factory.concrete.MergeFactory</node>
+    <node x="503.25000000000006" y="458.0">ru.otus.patterns.factory.concrete.InsertionFactory</node>
+    <node x="372.75000000000006" y="134.0">ru.otus.patterns.factory.SorterFlowFactory</node>
+    <node x="365.50000000000006" y="0.0">ru.otus.patterns.factory.sorter.usecase.SorterOutput</node>
+    <node x="637.75" y="0.0">ru.otus.patterns.factory.external.writer.FileWriter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.otus.patterns.adapter.FileToSorterInput" target="ru.otus.patterns.factory.external.reader.FileReader">
+      <point x="-89.0" y="-49.0" />
+      <point x="44.5" y="114.0" />
+      <point x="61.0" y="114.0" />
+      <point x="-36.25" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.SorterFlowFactory" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="61.33333333333337" y="-49.0" />
+      <point x="526.0833333333335" y="84.0" />
+      <point x="1009.4652930402931" y="84.0" />
+      <point x="-53.57142857142867" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.FileFlowFactory" target="ru.otus.patterns.factory.SorterFlowFactory">
+      <point x="35.60000000000002" y="-38.0" />
+      <point x="397.85" y="252.0" />
+      <point x="464.75000000000006" y="252.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.FileToSorterInput" target="ru.otus.patterns.factory.sorter.usecase.SorterInput">
+      <point x="89.0" y="-49.0" />
+      <point x="222.5" y="114.0" />
+      <point x="232.16666666666663" y="114.0" />
+      <point x="-45.33333333333334" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.MergeFactory" target="ru.otus.patterns.factory.sorter.impl.MergeSort">
+      <point x="18.0" y="-27.0" />
+      <point x="1320.2979853479853" y="378.0" />
+      <point x="1287.25" y="378.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.sorter.impl.SelectionSort" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="0.0" y="-27.0" />
+      <point x="1049.25" y="114.0" />
+      <point x="1063.0367216117218" y="114.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.SelectionFactory" target="ru.otus.patterns.factory.concrete.FileFlowFactory">
+      <point x="-22.0" y="-27.0" />
+      <point x="1005.25" y="408.0" />
+      <point x="377.08333333333337" y="408.0" />
+      <point x="14.833333333333371" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.InsertionFactory" target="ru.otus.patterns.factory.sorter.impl.InsertingSort">
+      <point x="22.0" y="-27.0" />
+      <point x="613.25" y="428.0" />
+      <point x="864.75" y="428.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.SelectionFactory" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="66.0" y="-27.0" />
+      <point x="1093.25" y="438.0" />
+      <point x="1135.75" y="438.0" />
+      <point x="1135.75" y="114.0" />
+      <point x="1080.8938644688646" y="114.0" />
+      <point x="17.85714285714289" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.InsertionFactory" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="66.0" y="-27.0" />
+      <point x="657.25" y="438.0" />
+      <point x="962.75" y="438.0" />
+      <point x="962.75" y="104.0" />
+      <point x="1045.1795787545789" y="104.0" />
+      <point x="-17.85714285714289" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.SorterOutputToFile" target="ru.otus.patterns.factory.sorter.usecase.SorterOutput">
+      <point x="-64.0" y="-27.0" />
+      <point x="608.75" y="74.0" />
+      <point x="485.50000000000006" y="74.0" />
+      <point x="48.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.SorterFlowFactory" target="ru.otus.patterns.factory.sorter.usecase.SorterOutput">
+      <point x="0.0" y="-49.0" />
+      <point x="464.75000000000006" y="114.0" />
+      <point x="437.50000000000006" y="114.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.FileFlowFactory" target="ru.otus.patterns.factory.sorter.usecase.SorterInput">
+      <point x="-35.599999999999966" y="-38.0" />
+      <point x="326.65000000000003" y="252.0" />
+      <point x="277.5" y="252.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.InsertionFactory" target="ru.otus.patterns.factory.concrete.FileFlowFactory">
+      <point x="-22.0" y="-27.0" />
+      <point x="569.25" y="428.0" />
+      <point x="317.75" y="428.0" />
+      <point x="-44.5" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.FileFlowFactory" target="ru.otus.patterns.adapter.SorterOutputToFile">
+      <point x="71.19999999999999" y="-38.0" />
+      <point x="433.45" y="262.0" />
+      <point x="672.75" y="262.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.SorterOutputToFile" target="ru.otus.patterns.factory.external.writer.FileWriter">
+      <point x="0.0" y="-27.0" />
+      <point x="-35.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.SorterFlowFactory" target="ru.otus.patterns.factory.sorter.usecase.SorterInput">
+      <point x="-61.33333333333337" y="-49.0" />
+      <point x="403.4166666666667" y="104.0" />
+      <point x="322.83333333333337" y="104.0" />
+      <point x="45.33333333333337" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.MergeFactory" target="ru.otus.patterns.factory.concrete.FileFlowFactory">
+      <point x="-54.0" y="-27.0" />
+      <point x="1248.2979853479853" y="398.0" />
+      <point x="406.75" y="398.0" />
+      <point x="44.5" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.SelectionFactory" target="ru.otus.patterns.factory.sorter.impl.SelectionSort">
+      <point x="22.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.MergeFactory" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="53.99999999999994" y="-27.0" />
+      <point x="1356.2979853479853" y="438.0" />
+      <point x="1438.75" y="438.0" />
+      <point x="1438.75" y="94.0" />
+      <point x="1116.6081501831504" y="94.0" />
+      <point x="53.57142857142867" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.sorter.impl.MergeSort" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="0.0" y="-38.0" />
+      <point x="1287.25" y="104.0" />
+      <point x="1098.7510073260075" y="104.0" />
+      <point x="35.71428571428578" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.FileFlowFactory" target="ru.otus.patterns.adapter.FileToSorterInput">
+      <point x="-71.19999999999999" y="-38.0" />
+      <point x="291.04999999999995" y="262.0" />
+      <point x="133.5" y="262.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.sorter.impl.InsertingSort" target="ru.otus.patterns.factory.sorter.Sorter">
+      <point x="0.0" y="-27.0" />
+      <point x="864.75" y="94.0" />
+      <point x="1027.322435897436" y="94.0" />
+      <point x="-35.71428571428578" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.factory.concrete.FileFlowFactory" target="ru.otus.patterns.factory.sorter.usecase.SorterOutput">
+      <point x="0.0" y="-38.0" />
+      <point x="362.25" y="262.0" />
+      <point x="353.7842490842491" y="262.0" />
+      <point x="353.7842490842491" y="114.0" />
+      <point x="389.50000000000006" y="114.0" />
+      <point x="-48.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="868.0" y="122.72222222222229" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,7 +1,15 @@
 rootProject.name = 'fabricated-sorting'
 
 include ':sorter'
+
+include ':file-reader'
+include ':file-writer'
+
 include ':application'
 
 project(":sorter").projectDir = file("module/sorter")
+
+project(":file-reader").projectDir = file("module/file-reader")
+project(":file-writer").projectDir = file("module/file-writer")
+
 project(":application").projectDir = file("module/application")

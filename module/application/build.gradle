@@ -1,3 +1,14 @@
 apply plugin: "application"
 
 ext.moduleName = 'otus.fabricated.sorting.application'
+
+application {
+    setProperty('mainModule', 'fabricated.sorting.application')
+    setProperty('mainClass', 'ru.otus.patterns.SortingApplication')
+}
+
+dependencies {
+    implementation project(":sorter")
+    implementation project(":file-reader")
+    implementation project(":file-writer")
+}

@@ -1,6 +1,6 @@
-package ru.otus.patterns.sorter.impl;
+package ru.otus.patterns.factory.sorter.impl;
 
-import ru.otus.patterns.sorter.Sorter;
+import ru.otus.patterns.factory.sorter.Sorter;
 
 public class MergeSort implements Sorter {
 

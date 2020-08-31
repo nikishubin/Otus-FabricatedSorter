@@ -4,7 +4,8 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import ru.otus.patterns.sorter.impl.SelectionSort;
+import ru.otus.patterns.factory.sorter.Sorter;
+import ru.otus.patterns.factory.sorter.impl.SelectionSort;
 
 class SelectionSorterTest {
 
