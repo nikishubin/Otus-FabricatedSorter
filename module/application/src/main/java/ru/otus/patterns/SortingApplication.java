@@ -26,7 +26,7 @@ public class SortingApplication {
 
         int[] input = reader.read();
         sorter.sort(input);
-        writer.write(input);
+        writer.write(algorithm, input);
     }
 
     private static SorterFlowFactory getFlowByAlgorithm(Algorithm algorithm, String inputFilePath, String outputFilePath) {
