@@ -1,7 +1,7 @@
 package ru.otus.patterns;
 
 import ru.otus.patterns.factory.SorterFlowFactory;
-import ru.otus.patterns.factory.concrete.InsertionFactory;
+import ru.otus.patterns.factory.concrete.InsertingFactory;
 import ru.otus.patterns.factory.concrete.MergeFactory;
 import ru.otus.patterns.factory.concrete.SelectionFactory;
 import ru.otus.patterns.factory.sorter.Algorithm;
@@ -32,7 +32,7 @@ public class SortingApplication {
     private static SorterFlowFactory getFlowByAlgorithm(Algorithm algorithm, String inputFilePath, String outputFilePath) {
         return switch (algorithm) {
             case MERGE -> new MergeFactory(inputFilePath, outputFilePath);
-            case INSERTING -> new InsertionFactory(inputFilePath, outputFilePath);
+            case INSERTING -> new InsertingFactory(inputFilePath, outputFilePath);
             case SELECTION -> new SelectionFactory(inputFilePath, outputFilePath);
         };
     }

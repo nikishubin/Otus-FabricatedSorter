@@ -15,7 +15,7 @@ Flow:
 
 Supported sorting algorithms:
 1. merge;
-2. insertion;
+2. inserting;
 3. selection.
 
 Command:
